@@ -18,3 +18,16 @@ Feature: Elements
       #| laura prada.   | jean salamanca@axa.com | cr@ 45 24         | crr 454|
       #| P@ula rod      |je@axa@dadw.com         |cra. ""            |awda38434|
 
+  @check_box
+  Scenario Outline: Check box
+    When ingreso al apartado de elements y check box
+    And marco los campos deseados "<seleccion1>", "<seleccion2>", "<seleccion3>"
+    Then los campos son seleccionados
+
+    Examples:
+      | seleccion1 | seleccion2 | seleccion3 |
+      | Notes      | Public     | Downloads  |
+      | Commands   | Documents  | Angular    |
+      | Home       | Veu        | Classified |
+      | React      | Private    |            |
+

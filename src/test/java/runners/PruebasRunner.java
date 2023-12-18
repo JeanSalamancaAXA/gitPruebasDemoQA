@@ -8,7 +8,7 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         features = "src/test/resources/features"
         ,glue = "org/AXA/steps"
-        ,tags = "@text_box"
+        ,tags = "@check_box"
 )
 public class PruebasRunner {
 }
